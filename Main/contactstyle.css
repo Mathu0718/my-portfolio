@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #000000; 
+}
+
+.sub-title {
+    font-weight: bolder;
+    font-size: 80px;
+}
+
+#contact {
+    background-color: #000000;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.containerc {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-left: 300px;
+}
+
+.row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-left {
+    flex: 0 0 48%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.contact-right {
+    flex: 0 0 48%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: auto;
+}
+
+.contact-right h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #b9b9b9;
+}
+
+#con {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#con ul {
+    padding: 0;
+    margin: 10px 0;
+}
+
+#con ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+#con ul li a {
+    color: #464646;
+    text-decoration: none;
+    font-size: 25px;
+    position: relative;
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#con ul li a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    transition: 0.3s ease all;
+    transform: translateX(-50%);
+}
+
+#con ul li a:hover {
+    color: #c7f8ff;
+    transform: translateY(-5px);
+}
+
+#con ul li a:hover::after {
+    width: 100%;
+}
+
+.form-group {
+    position: relative;
+    margin: 30px 0;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #fff;
+    background: transparent;
+    padding: 10px 0;
+    color: #2A646D;
+    font-size: 18px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-bottom: 2px solid #ffffff;
+    outline: none;
+}
+
+.form-group label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    color: #646464;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.form-group input:focus ~ label,
+.form-group textarea:focus ~ label,
+.form-group input:not(:placeholder-shown) ~ label,
+.form-group textarea:not(:placeholder-shown) ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: #c7f8ff;
+}
+
+.btn2 {
+    display: inline-block;
+    border: 1px solid #ffffff;
+    padding: 14px 60px;
+    border-radius: 6px;
+    color: #fff;
+    background-color: transparent;
+    font-size: 20px;
+    transition: background 0.5s, transform 0.3s;
+    cursor: pointer;
+}
+
+.btn2:hover {
+    background-image: linear-gradient(to top, #3d4645, #ccfbd3);
+    transform: scale(1.1);
+}
+
+.copyright {
+    text-align: center;
+    padding: 30px 0;
+    background: #000000;
+}
+
+.copyright i {
+    color: #c7f8ff;
+}
+
+#nav-list {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #7d7d7d;
+    transition: right 0.3s ease;
+    z-index: 1000;
+    padding-top: 50px;
+}
+
+#nav-list a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#nav-list a:hover {
+    background-color: #ffffff;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+#nav-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  font-size: 18px;
+  background-color: #ffffff;
+  color: #7d7d7d;
+  cursor: pointer;
+  border-radius: 50%;
+  display: none;
+  z-index: 1000;
+  transition: opacity 0.3s ease;
+}
+
+#nav-button:hover {
+    background-color: #6f6f6f;
+}
+
+#nav-list {
+    position: fixed;
+    padding: 0;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: rgba(122, 122, 122, 0.9);
+    color: #fff;
+    transition: right 0.3s ease;
+    z-index: 1000;
+  }
+  
+
+#nav-list a {
+    display: block;
+    padding: 15px;
+    color: #000000;
+    text-decoration: none;
+}
+
+#nav-list a:hover {
+    background-color: #ffffff;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+

@@ -1,0 +1,177 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .certificates-section {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 60px;
+    font-weight: bold;
+    margin: 10px 0 20px 0;
+    color: #2d2d2d;
+  }
+
+  
+  .certificate-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .certificate-list h2{
+    font-size: 15px;
+    text-align: center;
+    color: #383838;
+  }
+  
+  .certificate-title1{
+    text-align: left;
+    margin-left: 50px;
+    font-size: 40px;
+    font-weight: 200;
+    color: #3d3d3d;
+}
+
+  .certificate-card {
+    display: flex;
+    background-color:  #4d4d4d;
+    border: 1px solid #3a3a3a;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    padding: 20px;
+    transition: transform 0.5s ease, background-size 0.5s ease-in-out;
+    background-size: 100% 0%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+  
+  .certificate-card:hover {
+    transform: translateY(-5px);
+    background-size: 100% 100%;
+    background-image: linear-gradient(to top, #3d4645, #ccfbd3, #3d4645);
+  }
+
+  .certificate-card h3{
+    color: #000000;
+  }
+
+  .certificate-card p{
+    color: #000000;
+  }
+  
+  .certificate-image {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+  
+  .certificate-info {
+    padding: 16px;
+    text-align: left;
+  }
+  
+  .certificate-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 8px;
+  }
+  
+  
+  .certificate-description {
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 1.5;
+  }
+  
+  /* Modal Styling */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .modal-content {
+    display: block;
+    margin: 5% auto;
+    width: 40%; /* Reduce the width of the certificate */
+    max-height: 70%; /* Ensure it doesn't exceed the viewport height */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+  } 
+  
+/* Navigation button style */
+#nav-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  font-size: 18px;
+  background-color: #101010;
+  color: #7d7d7d;
+  cursor: pointer;
+  border-radius: 50%;
+  display: none;
+  z-index: 1000;
+}
+
+/* Navigation list (the right sliding panel) */
+#nav-list {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: rgba(122, 122, 122, 0.9);
+  color: #fff;
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+
+#nav-list a {
+  display: block;
+  padding: 15px;
+  color: #000000;
+  text-decoration: none;
+}
+
+#nav-list a:hover {
+  background-color: #ffffff;
+}
+
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}

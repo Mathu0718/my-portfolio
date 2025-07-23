@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="mainstyle.css">
+
+    <script src="https://kit.fontawesome.com/43f8395fe8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--loading page-->
+    <div class="loading-container">
+        <div class="loading-screen">
+            <div class="loading-words">
+                <h2 class="home-active">&nbsp;&nbsp;&nbsp;&nbsp;Hello</h2>
+                <h2 class="home-active">&nbsp;&nbsp;&nbsp;&nbsp;Hola</h2>
+                <h2 class="home-active">வணக்கம் </h2>
+                <h2 class="home-active">&nbsp;&nbsp;&nbsp;Bonjour</h2>
+                <h2 class="home-active">&nbsp;&nbsp;&nbsp;&nbsp;Hallo</h2>
+            </div>
+        </div>
+    </div>
+    <div id="home-container">
+        <div id="header">
+            <!-- Navigation Button-->
+            <div id="nav-button" onclick="toggleNavList()">☰</div>
+
+            <!-- Navigation List (Right Panel)-->
+            <div id="nav-list">
+                <a href="#header">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Skills & Certification</a>
+                <a href="#my-work">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <nav id="main">
+                <img src="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills & Certification</a></li>
+                    <li><a href="#my-work">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <!---i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i--->
+                </ul>
+                <!---i class="fa-solid fa-bars" onclick="openmenu()"></i-->
+            </nav>
+            <div class="header-text1">
+                <p><i class="fa-regular fa-copyright"></i> mathu c</p>
+            </div>
+            <div class="header-text2">
+                <p>&#8600;</p>
+            </div>
+            <div class="header-text">
+                <p>Agile Innovator</p>
+                <a href="photos/Madhu Res.pdf">Download CV</a>
+            </div>
+            <!---Name scrolling infinite time baesd on screen up and down scrolling-->
+            <div id="scroll-container" class="scrolling-container">
+                <div class="scrolling-wrapper">
+                    <span class="scrolling-text">- Mathu C - Mathu C - Mathu C - Mathu C</span>
+                    <span class="scrolling-text">- Mathu C - Mathu C - Mathu C - Mathu C</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------about---------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">A Glimpse Into Me</h1>
+                    <p>“An ambitious Information Technology student, driven by to
+                        secure a dynamic career path that fosters continual grouth,
+                        skill enhancement, and contribute to innovative projects.”</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links active-link" onclick="opentab('soft skills')">Soft Skills</p>
+                    </div>
+                    <div class="tab-contents  active-tab" id="experience">
+                        <ul>
+                            <li><span>ZEN 1 Techpark</span> - Fullstack Developer Internship (Feb 2024 – Mar 2024)
+                                Completed a 15-day <br>
+                                specializing in fullstack development, refining skills in coding, debugging, and
+                                software <br>
+                                deployment. Showcased enthusiasm, leadership, self-discipline, and strong
+                                self-motivation.</li>
+                            <li><span>CodSoft </span>- Java programming Internship (Aug 2024 – Sep 2024) Completed a
+                                4-weeks internship<br>
+                                specializing in Basic java syntax, Data Structure, Java collection framework and Basic
+                                oops concept.<br>
+                                Displayed commitment, responsibility, and a passion for logical thinking and Java
+                                programming.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.Tech – Information Technology (2022– 2026)</span><br>at Karpagam Institute of
+                                Technology, Coimbatore CGPA 7.6</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="soft skills">
+                        <ul>
+                            <li><span>> </span>Leadership.<br><span>> </span>Critical Thinking.<br><span>>
+                                </span>Flexibility.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- "See more" Button -->
+            <div class="see-more-btn-container">
+                <a href="about.html" class="btn">See more Details<sup>*</sup></a>
+            </div>
+        </div>
+    </div>
+    <!--------------services-------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Technical Skills & Certifications</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>JAVA</h2>
+                    <p>Knowledge Level - Intermediate</p>
+                    <p>Certificates Completed - Three</p>
+                    <p>Especially in NPTEL</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-cloud"></i>
+                    <h2>Cloud Computing</h2>
+                    <p>Knowledge Level - Basic</p>
+                    <p>Certificates Completed - Six</p>
+                    <p>Especially in AWS & Oracle</p>
+                </div>
+            </div>
+            <!-- "See more" Button -->
+            <div class="see-more-btn-container">
+                <a href="cer.html" class="btn">View All Certificates<sup>9</sup></a>
+            </div>
+        </div>
+    </div>
+    <!-------MY works--------->
+    <div id="my-work">
+        <div class="container">
+            <h1 class="sub-title-p">Projects</h1>
+            <section id="projects" class="projects-section">
+                <div class="table-container">
+                    <table class="projects-table">
+                        <tbody>
+                            <tr>
+                                <td>Food Ordering Website Frontend<br><span class="team-info">Solo Project</span></td>
+                                <td class="image-cell">
+                                    <div class="work-list">
+                                        <div class="work">
+                                            <img src="photos\Food_order_website_main1.png">
+                                            <div class="layer">
+                                                <h3>Food Ordering Website</h3>
+                                                <p>An interactive food ordering website that allows users to select a
+                                                    shop, view the menu, add items to the cart, and proceed to checkout.
+                                                </p>
+                                                <a href="https://github.com/Mathu0718/Food-ordering-website_frontend"><i
+                                                        class="fa-brands fa-github"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>My Portfolio Website<br><span class="team-info">Solo Project</span></td>
+                                <td class="image-cell">
+                                    <div class="work-list">
+                                        <div class="work">
+                                            <img src="photos\protfolio.png">
+                                            <div class="layer">
+                                                <h3>Portfolio Website</h3>
+                                                <p>A personal portfolio website showcasing projects, skills, and
+                                                    achievements with a modern, responsive design.
+                                                    Built with HTML, CSS, and JavaScript, it features smooth animations
+                                                    and interactive sections for an engaging user experience.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="see-more-btn-container">
+                    <a href="proj.html" class="btn">More Project and Detailed Discription <sup>2</sup></a>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!----------contact------------->
+    <div id="contact">
+        <div class="containerc">
+            <h1 class="sub-title-c">Get in Touch</h1>
+            <div class="row">
+                <!-- Contact Form on the Left -->
+                <div class="contact-left">
+                    <form name="submit-to-google-sheet">
+                        <div class="form-group">
+                            <input type="text" name="Name" id="name" placeholder=" " required>
+                            <label for="name">Your Name ...</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="Email" id="email" placeholder=" " required>
+                            <label for="email">Your Email ...</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="Message" id="message" placeholder=" " rows="4" required></textarea>
+                            <label for="message">Your Message ...</label>
+                        </div>
+                        <button type="submit" class="btn btn2">Send Message</button>
+                    </form>
+                </div>
+                <!-- Contact Info and Social Links on the Right -->
+                <div class="contact-right">
+                    <h2>Contact Information</h2>
+                    <nav id="con">
+                        <ul>
+                            <li><a href="mailto:mathuchinnamurugan@gmail.com"><i class="fa-solid fa-paper-plane"></i>
+                                    mathuchinnamurugan@gmail.com</a></li>
+                            <li><a href="sms:+919360305013"><i class="fa-solid fa-phone"></i> +91 9360305013</a></li>
+                        </ul>
+                    </nav>
+                    <h2>Socials</h2>
+                    <nav id="con">
+                        <ul>
+                            <li><a href="https://www.linkedin.com/in/mathu-c/">LinkedIn</a></li>
+                            <li><a href="https://github.com/Mathu0718">GitHub</a></li>
+                            <li><a href="photos/Madhu Res.pdf">Download CV</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright <i class="fa-regular fa-copyright"></i>Mathu C</p>
+        </div>
+    </div>
+
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const scriptURL = "https://script.google.com/macros/s/AKfycbyzr98PZxc_Hux4jRY4QYcYkDsF9ZR_O6mxwxoor-63whfpXegTQA0wP3XZKY99YBOV/exec"; // ✅ Replace with your script URL
+            const form = document.forms["submit-to-google-sheet"];
+
+            form.addEventListener("submit", async (e) => {
+                e.preventDefault();
+
+                const formData = new FormData(form);
+                const formObject = Object.fromEntries(formData.entries());
+
+                console.log("Form Data:", formObject); // 🔍 Debugging
+
+                try {
+                    const response = await fetch(scriptURL, {
+                        method: "POST",
+                        body: new URLSearchParams(formObject) // ✅ Ensures correct encoding
+                    });
+
+                    const result = await response.json();
+                    console.log("Server Response:", result);
+
+                    if (result.result === "success") {
+                        alert("Message sent successfully!");
+                        form.reset();
+                    } else {
+                        alert("Submission failed: " + result.message);
+                    }
+                } catch (error) {
+                    console.error("Fetch Error:", error);
+                    alert("Submission failed. Please check your internet connection.");
+                }
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const greetings = document.querySelectorAll(".loading-words h2.home-active");
+            const loadingContainer = document.querySelector(".loading-container");
+            const firstWordTime = 500; // 0.5 seconds
+            const normalWordTime = 200; // 0.2 seconds
+            const lastWordTime = 500; // 0.5 seconds
+            const fadeTime = 200; // Fade-in and fade-out duration
+            let currentIndex = 0;
+
+            function displayText() {
+                if (currentIndex > 0) {
+                    greetings[currentIndex - 1].style.opacity = 0;
+                }
+
+                if (currentIndex < greetings.length) {
+                    greetings[currentIndex].style.opacity = 1;
+
+                    // Set different timings for the first and last word
+                    let delay = currentIndex === 0 ? firstWordTime :
+                        currentIndex === greetings.length - 1 ? lastWordTime : normalWordTime;
+
+                    setTimeout(() => {
+                        currentIndex++;
+                        displayText();
+                    }, delay + fadeTime);
+                } else {
+                    setTimeout(() => {
+                        // Remove the loading screen with a smooth scroll-up animation
+                        loadingContainer.style.transition = "transform 0.8s ease-in-out, opacity 0.8s ease-in-out";
+                        loadingContainer.style.transform = "translateY(-100%)"; // Move it up
+                        loadingContainer.style.opacity = "0";
+
+                        setTimeout(() => {
+                            loadingContainer.style.display = "none"; // Hide it completely
+                        }, 800);
+                    }, lastWordTime);
+                }
+            }
+
+            // Start the animation
+            displayText();
+        });
+    </script>
+    <script>
+         var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        let lastScrollTop = 0;
+        let baseSpeed = 2; // Base speed for the scroll (adjust as needed)
+        let dynamicSpeed = baseSpeed;
+        let direction = -1; // -1 for left, 1 for right
+        let scrollPosition = 0;
+
+        const scrollingWrapper = document.querySelector(".scrolling-wrapper");
+        const containerWidth = scrollingWrapper.offsetWidth;
+
+        // Function to update scroll position continuously
+        function updateScroll() {
+            scrollPosition += dynamicSpeed * direction;
+            scrollingWrapper.style.transform = `translateX(${scrollPosition}px)`;
+
+            // Reset position to create an infinite loop effect
+            if (direction === -1 && scrollPosition <= -containerWidth / 2) {
+                scrollPosition = 0;
+            } else if (direction === 1 && scrollPosition >= 0) {
+                scrollPosition = -containerWidth / 2;
+            }
+            requestAnimationFrame(updateScroll);
+        }
+
+        // Adjust speed and direction based on page scroll
+        document.addEventListener("scroll", function () {
+            const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (currentScroll > lastScrollTop) {
+                // Scrolling down, move left
+                direction = -1;
+                dynamicSpeed = baseSpeed * 3; // Increase speed when scrolling down
+            } else if (currentScroll < lastScrollTop) {
+                // Scrolling up, move right
+                direction = 1;
+                dynamicSpeed = baseSpeed * 3; // Increase speed when scrolling up
+            }
+
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+
+            // Reset to base speed if scrolling stops
+            clearTimeout(scrollingWrapper.scrollTimeout);
+            scrollingWrapper.scrollTimeout = setTimeout(() => {
+                dynamicSpeed = baseSpeed;
+            }, 200);
+        });
+
+        // Start the continuous scroll
+        updateScroll();
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const greetings = document.querySelectorAll(".loading-words h2.home-active");
+            const loadingContainer = document.querySelector(".loading-container");
+            const navButton = document.getElementById("nav-button");
+            const navList = document.getElementById("nav-list");
+            const overlay = document.createElement("div");
+            overlay.id = "overlay";
+            document.body.appendChild(overlay);
+
+            // Initially hide navButton and overlay
+            navButton.style.display = "none";
+            overlay.style.display = "none";
+
+            let currentIndex = 0;
+            const displayTime = 600; // Display time for each word
+
+            // Display greeting words in sequence
+            function displayText() {
+                if (currentIndex > 0) {
+                    greetings[currentIndex - 1].style.opacity = 0;
+                }
+                if (currentIndex < greetings.length) {
+                    greetings[currentIndex].style.opacity = 1;
+                    setTimeout(() => {
+                        currentIndex++;
+                        displayText();
+                    }, displayTime);
+                } else {
+                    setTimeout(() => {
+                        // Fade out loading screen smoothly
+                        loadingContainer.style.opacity = 0;
+                        setTimeout(() => {
+                            loadingContainer.remove();
+                            document.body.style.overflow = "auto"; // Enable scrolling
+                            initializeNavButton(); // Initialize the nav button after loading
+                        }, 300);
+                    }, displayTime);
+                }
+            }
+
+            // Initialize navigation button functionality
+            function initializeNavButton() {
+                const scrollShowDistance = 200;
+                let lastScrollY = 0;
+
+                // Toggle nav list visibility and overlay
+                function toggleNavList() {
+                    if (navList.style.right === "0px") {
+                        navList.style.right = "-250px"; // Hide the panel
+                        overlay.style.display = "none";
+                    } else {
+                        navList.style.right = "0px"; // Show the panel
+                        overlay.style.display = "block";
+                    }
+                }
+
+                navButton.addEventListener("click", toggleNavList);
+
+                // Hide nav list when clicking the overlay
+                overlay.addEventListener("click", function () {
+                    navList.style.right = "-250px";
+                    overlay.style.display = "none";
+                });
+
+                // Show/hide nav button based on scroll position
+                window.addEventListener("scroll", function () {
+                    const currentScrollY = window.scrollY;
+                    if (currentScrollY > scrollShowDistance) {
+                        navButton.style.display = "block"; // Show after scrolling
+                    } else {
+                        navButton.style.display = "none"; // Hide at top
+                        navList.style.right = "-250px";
+                        overlay.style.display = "none";
+                    }
+                    lastScrollY = currentScrollY;
+                });
+            }
+
+            // Start the loading animation
+            displayText();
+        });
+    </script>
+    <script>
+         // Scroll Event for Slide-Up Animation
+         document.addEventListener("scroll", function () {
+            const aboutSection = document.getElementById("about");
+            const rect = aboutSection.getBoundingClientRect();
+            const screenHeight = window.innerHeight || document.documentElement.clientHeight;
+
+            if (rect.top <= screenHeight / 2 && rect.bottom >= 0) {
+                aboutSection.classList.add("visible");
+            } else {
+                aboutSection.classList.remove("visible");
+            }
+        });
+    
+    
+        // Scroll Event for Slide-Up Animation
+        document.addEventListener("scroll", function () {
+            const aboutSection = document.getElementById("services");
+            const rect = aboutSection.getBoundingClientRect();
+            const screenHeight = window.innerHeight || document.documentElement.clientHeight;
+
+            if (rect.top <= screenHeight / 2 && rect.bottom >= 0) {
+                aboutSection.classList.add("visible");
+            } else {
+                aboutSection.classList.remove("visible");
+            }
+        });
+    
+
+        // Scroll Event for Slide-Up Animation
+        document.addEventListener("scroll", function () {
+            const aboutSection = document.getElementById("my-work");
+            const rect = aboutSection.getBoundingClientRect();
+            const screenHeight = window.innerHeight || document.documentElement.clientHeight;
+
+            if (rect.top <= screenHeight / 2 && rect.bottom >= 0) {
+                aboutSection.classList.add("visible");
+            } else {
+                aboutSection.classList.remove("visible");
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="aboutstyle.css">
+</head>
+<body>
+    
+
+    <!-------------------------- About Section ---------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-2">
+                    <h1 class="sub-title">A Glimpse Into Me</h1>
+                    
+                    <p>“An ambitious Information Technology student, driven to secure a dynamic career path that fosters continual growth, skill enhancement, and contribute to innovative projects.”</p>
+                    <p>"Agile Innovator" – Showcases your adaptability, critical thinking, and leadership in bringing new ideas.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                        <p class="tab-links" onclick="openTab('soft-skills')">Soft Skills</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="experience">
+                        <ul>
+                            <li><span>ZEN 1 Techpark</span> - Fullstack Developer Internship (Feb 2024 – Mar 2024). Completed a 15-day internship specializing in fullstack development, refining skills in coding, debugging, and software deployment.</li>
+                            <li><span>CodSoft</span> - Java Programming Internship (Aug 2024 – Sep 2024). Completed a 4-week internship specializing in Java syntax, data structures, Java collections, and OOP concepts.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.Tech – Information Technology (2022–2026)</span><br>at Karpagam Institute of Technology, Coimbatore (CGPA: 7.6)</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="soft-skills">
+                        <ul>
+                            <li><span>> </span>Leadership.<br><span>> </span>Critical Thinking.<br><span>> </span>Flexibility.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="about-col-1">
+                    <img src="./photos/myphotos.jpg" alt="Profile Image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navigation Button -->
+    <div id="nav-button">☰</div>
+    <div id="nav-list">
+        <a href="main.html">Home</a>
+        <a href="cer.html">Skills & Certification</a>
+        <a href="proj.html">My projects</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <script src="aboutjs.js"></script>
+</body>
+</html>

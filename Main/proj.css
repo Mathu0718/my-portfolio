@@ -1,0 +1,264 @@
+/*-------------- My Work ----------*/
+body {
+    background-color: #ffffff; /* Entire webpage background set to black */
+}
+
+#my-work {
+    padding: 20px 0;
+    background-color: #ffffff;
+    opacity: 1; /* Always visible */
+    transition: opacity 0.8s ease; /* Smooth opacity transition */
+}
+
+.sub-title {
+    text-align: center;
+    font-size: 60px; /* Increased font size */
+    color: #2d2d2d;
+    text-transform: uppercase;
+}
+
+.projects-section {
+    padding: 40px;
+    background-color: #ffffff;
+}
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s ease-in-out;
+}
+
+.layer {
+    height: 0;
+    width: 100%;
+    background: linear-gradient(transparent, #000000);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a {
+    margin-top: 20px;
+    color: #7af9d9;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #333333;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work:hover img {
+    transform: scale(1.1);
+}
+
+.work:hover .layer {
+    height: 100%;
+}
+
+/* Table Section */
+.projects-section {
+    padding: 40px;
+    background-image: linear-gradient(to top, #3d4645, #ccfbd3, #3d4645);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 100px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+.table-container h2{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: center;
+}
+
+.projects-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-image: linear-gradient(to top, #7b7b7b, #323232,#7b7b7b);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.projects-table th,
+.projects-table td {
+    border: 1px solid #141111;
+    padding: 16px;
+    text-align: center;
+}
+
+.projects-table th {
+    background-color: #100e0e;
+    font-weight: 600;
+}
+
+.projects-table td {
+    color: #fff;
+    vertical-align: middle;
+    font-size: 30px;
+}
+
+.image-cell img {
+    height: 200px;
+    width: 1000px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.team-info {
+    color: #c08b8b;
+    font-size: 20px;
+}
+
+.see-more-link {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.see-more-link:hover {
+    text-decoration: underline;
+}
+
+
+/* Increase height when a project is clicked */
+.project-row {
+    height: 100px;
+    max-height: 100px;
+    transition: height 0.5s ease; /* Smooth height transition */
+    overflow: hidden;
+}
+
+.project-details {
+    display: none;
+    height: 400px; /* Fixed height */
+    max-height: 400px; /* Ensures it does not exceed */
+    overflow: auto; /* Enables scrolling if content exceeds */
+    padding: 20px;
+    background-color: #000000;
+    color: #000000;
+    border-top: 2px solid #c9c9c9;
+}
+
+.project-row.expanded {
+    max-height: 900px; /* Adjust as needed */
+    background-color: #c9c9c9; /* Highlight the row when expanded */
+}
+
+.project-row.expanded .project-details {
+    display: block; /* Show the project details when expanded */
+}
+
+.project-row .detailed-content img {
+    width: 50%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+.project-row .detailed-content {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.project-row .detailed-content h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+/* Optionally, add a background color when a row is clicked */
+.project-row.expanded {
+    background-color: #313131;
+}
+
+
+
+
+
+/*-------------nvigation button efffect-----------------*/
+#nav-button {
+    position: fixed;
+    top: 20px; 
+    right: 20px;
+    padding: 10px 15px;
+    font-size: 18px;
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 50%;
+    display: none;
+    z-index: 1000;
+}
+
+#nav-list {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: rgba(122, 122, 122, 0.9);
+    color: #fff;
+    transition: right 0.3s ease;
+    z-index: 1000;
+}
+
+#nav-list a {
+    display: block;
+    padding: 15px;
+    color: #000000;
+    text-decoration: none;
+}
+
+#nav-list a:hover {
+    background-color: #ffffff;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+

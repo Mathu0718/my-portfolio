@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="contactstyle.css">
+    <script src="https://kit.fontawesome.com/43f8395fe8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="nav-button" onclick="toggleNavList()">☰</div>
+
+    <!-- Navigation List (Right Panel)--> 
+    <div id="nav-list">
+        <a href="main.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="cer.html">Skills & Certification</a>
+        <a href="proj.html">Projects</a>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="containerc">
+            <h1 class="sub-title">Get in Touch</h1>
+            <div class="row">
+                
+                <!-- Contact Form -->
+                <div class="contact-left">
+                    <form name="submit-to-google-sheet">
+                        <div class="form-group">
+                            <input type="text" name="Name" id="name" placeholder=" " required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="Email" id="email" placeholder=" " required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="Message" id="message" placeholder=" " rows="4" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn btn2">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info and Social Links -->
+                <div class="contact-right">
+                    <h2>Contact Information</h2>
+                    <nav id="con">
+                        <ul>
+                            <li><a href="mailto:mathuchinnamurugan@gmail.com"><i class="fa-solid fa-paper-plane"></i> mathuchinnamurugan@gmail.com</a></li>
+                            <li><a href="sms:+919360305013"><i class="fa-solid fa-phone"></i> +91 9360305013</a></li>
+                        </ul>
+                    </nav>
+                    <h2>Socials</h2>
+                    <nav id="con">
+                        <ul>
+                            <li><a href="https://www.linkedin.com/in/mathu-c/">LinkedIn</a></li>
+                            <li><a href="https://github.com/Mathu0718">GitHub</a></li>
+                            <li><a href="photos/Madhu Res.pdf">Download CV</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> By Mathu</p>
+        </div>
+    </div>
+
+    <script src="contactstyle.js"></script>
+
+</body>
+</html>
